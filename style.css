@@ -1,0 +1,67 @@
+body {
+    overflow-x: hidden;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #0d6efd;
+    padding-top: 60px;
+    transition: 0.3s;
+    z-index: 999;
+}
+
+.sidebar a {
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.sidebar a:hover {
+    background-color: #0b5ed7;
+}
+
+/* Open Sidebar Button */
+.open-btn {
+    position: fixed;
+    top: 3px;
+    left: 10px;
+    z-index: 1000;
+}
+
+#menu{
+    background-color: white;
+}
+
+/* Sticky Banner */
+.sticky-banner {
+    position: sticky;
+    top: 0;
+    background-color: #ffc107;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    z-index: 900;
+}
+
+.logo-container {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 8px;
+}
+
+.logo-container img {
+    max-height: 100px;
+    max-width: 100%;
+    object-fit: contain;
+}
