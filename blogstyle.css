@@ -1,0 +1,82 @@
+:root {
+    --bg: #f9f9f9;
+    --text: #333;
+    --card: white;
+    --header: #4a90e2;
+    --footer: #4a90e2;
+}
+
+body.dark {
+    --bg: #121212;
+    --text: #f0f0f0;
+    --card: #1e1e1e;
+    --header: #222;
+    --footer: #222;
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+header {
+    background: var(--header);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header button {
+    margin-top: 10px;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #fff;
+    color: #333;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.blog-card {
+    background: var(--card);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+
+.blog-card h3 {
+    margin: 0 0 10px;
+}
+
+.read-more {
+    color: #4a90e2;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.full-post {
+    display: none;
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+footer {
+    background: var(--footer);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
